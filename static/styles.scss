@@ -1,0 +1,80 @@
+// Color variables
+$primary-color: #ff6f61;          // Coral orange, vibrant and eye-catching for primary actions
+$primary-hover-color: #cc584d;    // Slightly darker coral for hover effects
+$success-color: #3da35d;          // Muted green, a bit earthy for a calm success color
+$success-hover-color: #2d7a47;    // Darker shade of green for hover effects
+$title-color: #1e1e1e;            // Very dark grey, sophisticated for titles and headers
+$bg-color: #faf3e0;               // Soft, warm beige for the background, easy on the eyes
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+}
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h1 {
+        color: $primary-hover_color;
+    }
+
+    h4 {
+        color: #666;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            
+            th {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+        }
+    }
+    
+    a {
+        display: inline-block;
+        padding: 18px 16px;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: $primary-color;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $primary-hover_color;
+        }
+    }
+
+    input {
+        padding: 10px;
+        margin: 5px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
+    #btn_add {
+        background-color: $success-color;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+            background-color: $success-hover-color;
+        }
+    }
+}
